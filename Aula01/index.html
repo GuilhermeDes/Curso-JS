@@ -23,37 +23,45 @@
 <body>
     <main>
         <div class="aula">
-            <h5>Aula 01 - <a
+            <h5>Aula 06 - <a
                     href="https://www.youtube.com/watch?v=BXqUH86F-kA&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm&index=1"><i
                         class="fa-solid fa-video" id="youtube"></i></a></h5>
         </div>
         <div class="conteudo">
             window.alert('Isso aqui é um alerta!')<br>
+
             window.confirm('Isso é um alerta com confirmação')<br>
+
             window.prompt('Sou um alerta que voce pode digitar! ok?')<br>
+
+            <br><br>
+            var n1 = Number.parseInt(prompt('Digite algum numero: '))
+            <br>
+            var n2 = Number.parseInt(prompt('Digite outro numero: '))
+            var s = n1 + n2
+            window.alert(`O resultado da soma dos dois numeros é: ${s}!`)*/
+            <br><br>
+            //var nome = window.prompt('Digite seu nome: ')
+            //var idade = Number(prompt())
+            <br><br>
+            var nome = window.prompt('Qual o seu nome? ')
+            window.alert(`O seu nome é: ${nome}`)
+            <br><br>
+            var nome = window.prompt('Qual o seu nome? ')
+            document.writeln(`O seu nome é ${nome.toUpperCase} e ${nome.toLowerCase} tem ${nome.length} letras!`)
+            <br><br>
+            var salario = window.prompt('Quanto voce ganha por mês?')
+            document.writeln(`O seu salario é de: ${salario.toFixed(2).replace(',', '.')}`)
+            <br><br>
+            var salario = window.prompt('Quanto voce ganha por mês?')
+            document.writeln(`O seu salario é de: ${salario.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}`)
+            
+        
         </div>
 
         <footer><i class="fa-solid fa-circle-chevron-left" id="next-back"></i><i
                 class="fa-solid fa-circle-chevron-right" id="next-back"></i></footer>
     </main>
-
+<script src="js/script.js"></script>
 </body>
-<script>
-    //window.alert('Isso aqui é um alerta!')
-
-    //window.confirm('Isso é um alerta com confirmação')
-
-    //window.prompt('Sou um alerta que voce pode digitar! ok?')
-
-    var n1 = Number.parseInt(prompt('Digite algum numero: '))
-    var n2 = Number.parseInt(prompt('Digite outro numero: '))
-    var s = n1 + n2
-    window.alert('O resultado da soma dos dois numeros é: ' + s + '!')
-
-    //var nome = window.prompt('Digite seu nome: ')
-    //var idade = Number(prompt())
-
-    //document.write
-</script>
-
 </html>
