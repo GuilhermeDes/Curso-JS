@@ -1,0 +1,249 @@
+/*RESET*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*inicio*/
+
+main {
+    background-color: goldenrod;
+    background: linear-gradient(45deg, #FEF9A7, #FAC213, #F77E21);
+    background-size: 400% 400%;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: colors 10s ease infinite;
+}
+
+.aula {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
+    width: 12%;
+    height: 7vh;
+    margin-top: 15px;
+    box-sizing: border-box;
+    box-shadow: 1px 4px 16px rgb(255, 255, 255);
+}
+
+h5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.conteudo {
+    display: flex;
+    background-color: white;
+    width: 90%;
+    border-radius: 15px;
+    height: 80vh;
+    margin-top: 15px;
+    overflow: auto;
+    padding: 1%;
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-size: 35px;
+    width: 100%;
+}
+
+#next-back {
+    color: white;
+    padding: 1%;
+}
+
+#next-back:hover {
+    color: rgb(236, 236, 236);
+}
+
+
+/*logo youtube*/
+#youtube {
+    font-size: 2vw;
+    margin-left: 5px;
+}
+
+#youtube:hover {
+    color: rgb(221, 186, 98);
+    cursor: pointer;
+}
+
+#youtube:active {
+    color: black;
+}
+
+#youtube:focus {
+    color: black;
+}
+
+#youtube:visited {
+    color: black;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*Inicio do conteudo do Youtube*/
