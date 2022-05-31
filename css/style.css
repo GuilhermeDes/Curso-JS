@@ -179,6 +179,7 @@ h5 {
 
 .conteudo {
     display: flex;
+    flex-direction: column;
     background-color: white;
     width: 90%;
     border-radius: 15px;

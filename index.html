@@ -23,40 +23,129 @@
 <body>
     <main>
         <div class="aula">
-            <h5>Aula 06 - <a
+            <h5>Revisão - <a
                     href="https://www.youtube.com/watch?v=BXqUH86F-kA&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm&index=1"><i
                         class="fa-solid fa-video" id="youtube"></i></a></h5>
         </div>
         <div class="conteudo">
-            window.alert('Isso aqui é um alerta!')<br>
-
-            window.confirm('Isso é um alerta com confirmação')<br>
-
-            window.prompt('Sou um alerta que voce pode digitar! ok?')<br>
-
-            <br><br>
-            var n1 = Number.parseInt(prompt('Digite algum numero: '))
-            <br>
-            var n2 = Number.parseInt(prompt('Digite outro numero: '))
-            var s = n1 + n2
-            window.alert(`O resultado da soma dos dois numeros é: ${s}!`)*/
-            <br><br>
-            //var nome = window.prompt('Digite seu nome: ')
-            //var idade = Number(prompt())
-            <br><br>
-            var nome = window.prompt('Qual o seu nome? ')
-            window.alert(`O seu nome é: ${nome}`)
-            <br><br>
-            var nome = window.prompt('Qual o seu nome? ')
-            document.writeln(`O seu nome é ${nome.toUpperCase} e ${nome.toLowerCase} tem ${nome.length} letras!`)
-            <br><br>
-            var salario = window.prompt('Quanto voce ganha por mês?')
-            document.writeln(`O seu salario é de: ${salario.toFixed(2).replace(',', '.')}`)
-            <br><br>
-            var salario = window.prompt('Quanto voce ganha por mês?')
-            document.writeln(`O seu salario é de: ${salario.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}`)
-            
-        
+            <div>
+                <div>/*</div>
+                <div>window.alert('Isso &eacute; um alerta!')</div>
+                <br />
+                <div>window.confirm('Isso &eacute; um alerta com confirma&ccedil;&atilde;o!')</div>
+                <br />
+                <div>window.prompt('Digite algo aqui')</div>
+                <br />
+                <div>var nome = 'Guilherme'</div>
+                <div>var idade = 21</div>
+                <br />
+                <div>var nome = window.prompt('Qual o seu nome?')</div>
+                <div>window.alert(`O seu nome &eacute;: ${nome}!`)</div>
+                <div>// ${Variavel} - Placeholder</div>
+                <div>// '+' Pode ser utilizado com conctena&ccedil;&atilde;o ou adi&ccedil;&atilde;o nas opera&ccedil;&otilde;es matematicas.</div>
+                <div>window.alert('O seu nome &eacute;: ' + nome + '!')</div>
+                <br /><br />
+                <div>//Utilizando somente o Number, onde ele identifica o tipo de numero.</div>
+                <div>var idade = Number(window.prompt('Qual a sua idade?'))</div>
+                <div>window.alert(`Voce tem ${idade} anos!`)</div>
+                <br />
+                <div>//Utilizando o Number.parseFloat ele so vai aceitar numeros floats.</div>
+                <div>var idade = Number.parseFloat(window.prompt('Qual a sua idade?'))</div>
+                <div>window.alert(`Voce tem ${idade} anos!`)</div>
+                <br />
+                <div>//Utilizando o Number.parseInt ele so vai aceitar numeros inteiros.</div>
+                <div>var idade = Number.parseInt(window.prompt('Qual a sua idade?'))</div>
+                <div>window.alert(`Voce tem ${idade} anos!`)</div>
+                <br />
+                <div>//Aqui fazemos uma opera&ccedil;&atilde;o matematica, onde pegamos duas variaveis e somamos elas.</div>
+                <div>var n1 = Number(window.prompt('Digite algum numero: '))</div>
+                <div>var n2 = Number(window.prompt('Digite outro numero: '))</div>
+                <div>var s = n1 + n2</div>
+                <div>window.alert(`A soma dos dois numeros &eacute;: ${s}`)</div>
+                <br />
+                <div>//Caso eu queira contar quantos caracteres tem a minha string eu posso utiliza o length ${name.length}</div>
+                <div>window.alert(`A soma dos dois numeros &eacute;: ${s.length}`)</div>
+                <br />
+                <div>//Se precisar deixar alguma varialve caixas altas(upercase) eu utilizo o toUpperCase() ${name.toUpperCase()}</div>
+                <div>window.alert(`A soma dos dois numeros &eacute;: ${s.toUpperCase()}`)</div>
+                <br />
+                <div>//Se precisar deixar alguma varialve caixas baixas(lowercase) eu utilizo o toLowerCase() ${name.toLowerCase()}</div>
+                <div>window.alert(`A soma dos dois numeros &eacute;: ${s.toLowerCase()}`)</div>
+                <br />
+                <div>//muito utilizado para demonstrar dados o ducoment.write ou document.writeln lhe auxilia de forma dinamica.</div>
+                <div>var nome = window.prompt('Qual o seu nome?')</div>
+                <div>document.writeln(`O seu nome &eacute;: ${nome}!`)</div>
+                <br />
+                <div>// A diferen&atilde; dos dois &eacute; que com o write ele nao processa os espa&ccedil;amento das letras enquanto o writeln sim.</div>
+                <br />
+                <div>//VAMOS APRENDER SOBRE OS OPERADORES</div>
+                <div>/*</div>
+                <div>//ARITMETICOS</div>
+                <div>ordem de preced&ecirc;ncia</div>
+                <div>()</div>
+                <div>**</div>
+                <div>* / %</div>
+                <div>+ -</div>
+                <br />
+                <div>//ATRIBUI&Ccedil;&Atilde;O</div>
+                <div>var n = 3</div>
+                <br />
+                <div>n = n + 4 &nbsp; &nbsp; &nbsp;=&gt; &nbsp;n += 4</div>
+                <div>n = n - 5 &nbsp; &nbsp; &nbsp;=&gt; &nbsp;n -= 5</div>
+                <div>n = n * 4 &nbsp; &nbsp; &nbsp;=&gt; &nbsp;n *= 4</div>
+                <div>n = n / 2 &nbsp; &nbsp; &nbsp;=&gt; &nbsp;n /= 2</div>
+                <div>n = n ** 2 &nbsp; &nbsp; =&gt; &nbsp;n **= 2</div>
+                <div>n = n % 5 &nbsp; &nbsp; &nbsp;=&gt; &nbsp;n %= 5</div>
+                <br />
+                <div>//RELACIONAIS</div>
+                <div>!A reposta dos relacionais &eacute; em boleano, no caso so ira mostra false ou true!</div>
+                <div>Ex: 21 &gt;= 20 : Sim pois 21 &eacute; maior do que 20.</div>
+                <div>&gt; - Maior do que...</div>
+                <div>&lt; - Menor do que...</div>
+                <div>&gt;= - Maior ou igual a ...</div>
+                <div>&lt;= - Menor ou igual a...</div>
+                <div>== - igual a...</div>
+                <div>!= - Diferente de...</div>
+                <div>=== - Tipo e valores iguais...</div>
+                <br />
+                <div>//LOGICOS</div>
+                <br />
+                <div>! - Nega&ccedil;&atilde;o - pode ser qualquer valor, menos o valor que foi mencionado</div>
+                <div>&amp;&amp; - Conjun&ccedil;&atilde;o - precisa ter os respectivos valores informado</div>
+                <div>|| - Disjun&ccedil;&atilde;o - so precisa de um valor informado</div>
+                <br />
+                <div>Ex01:</div>
+                <div>var n1 = 5</div>
+                <div>var n2 = 8</div>
+                <div>n1 &lt;= n2 || N2 / 2 == 2</div>
+                <div>true || false &nbsp;</div>
+                <div>R: true</div>
+                <br />
+                <div>Ex02:</div>
+                <div>var n1 = 5</div>
+                <div>var n2 = 8</div>
+                <div>n1 &gt; n2 &amp;&amp; N2 % 2 = 0</div>
+                <div>false &amp;&amp; true</div>
+                <div>R: false</div>
+                <br />
+                <div>//TERNARIO</div>
+                <br />
+                <div>?</div>
+                <div>:</div>
+                <br />
+                <div>TESTE ? TRUE : FALSE</div>
+                <div>EX: media &gt;= 7 ? 'APROVADO' : 'REPROVADO'</div>
+                <br />
+                <div>var x = 8</div>
+                <div>var res = x % 2 == 0 ? 5 : 9</div>
+                <br />
+                <div>ORDEM DE PRECENDENCIA DOS OPERADORES</div>
+                <div>//ARITMETICOS</div>
+                <div>//RELACIONAIS</div>
+                <div>//LOGICOS</div>
+                <div>//TERNARIO</div>
+                <div>*/</div>
+                </div>
         </div>
 
         <footer><i class="fa-solid fa-circle-chevron-left" id="next-back"></i><i
