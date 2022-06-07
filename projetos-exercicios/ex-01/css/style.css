@@ -181,10 +181,11 @@ h3 {
     border-radius: 5px;
     margin-bottom: 25px;
 }
- label {
-     font-weight: bold;
-     padding-bottom: 2%;
- }
+
+label {
+    font-weight: bold;
+    padding-bottom: 2%;
+}
 
 .peso {
     outline: none;
@@ -234,10 +235,16 @@ h3 {
 }
 
 .imgr {
-width: 10%;
-padding-right: 2%;
+    width: 12%;
+    padding-bottom: 2%;
 }
 
-.popup {
-    display: hidden;
+.imgrst {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    text-align: center;
 }

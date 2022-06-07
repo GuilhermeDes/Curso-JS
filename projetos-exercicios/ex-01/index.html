@@ -11,12 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Code+Pro&display=swap" rel="stylesheet">
     <!--Link do CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <!--Icone do site-->
+    <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
     <title>Calculadora IMC</title>
 </head>
 
 <body>
     <main>
+
         <div class="content">
+            <img src="./img/logo.png" style="width: 50%; margin-bottom: 5%;">
             <h3>Vamos descobrir o seu IMC?</h3>
             <div class="imgrst" id="resultado"></div>
             <label>Peso:</label>
@@ -25,14 +29,9 @@
             <input type="number" class="altura" id="altura" placeholder="Digite a sua altura em metros!">
 
             <button class="btn-calcular" id="btn-calcular" onclick="calcularimc()">Descobrir</button>
-            <a href="#popup"><p class="quest">O que é IMC?</p></a>
             <p>Desenvolvido por Guilherme Araujo @2022</p>
         </div>
     </main>
-    <div class="popup"><h2>C&aacute;lculo do &Iacute;ndice de Massa Corporal</h2>
-        <p>Para a sua posi&ccedil;&atilde;o na tabela do &Iacute;ndice de Massa Corporal, voc&ecirc; precisa de dois valores: seu peso e altura. &Eacute; s&oacute; dividir o peso (em quilos) pelo quadrado da altura (em metros), que &eacute; obtido pela multiplica&ccedil;&atilde;o da altura por ela mesma.</p>
-        <p>Ent&atilde;o, a f&oacute;rmula fica assim:&nbsp;<strong>IMC = Peso&nbsp;</strong><strong>/ Altura&sup2;.</strong></p>
-        <p>Se matem&aacute;tica n&atilde;o for o seu forte, voc&ecirc; pode usar calculadoras de &Iacute;ndice de Massa Corporal dispon&iacute;veis na internet.</p></div>
     <script src="./js/script.js"></script>
 </body>
 
