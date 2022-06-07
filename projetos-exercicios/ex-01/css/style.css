@@ -232,3 +232,12 @@ h3 {
     transition: 1s;
     cursor: pointer;
 }
+
+.imgr {
+width: 10%;
+padding-right: 2%;
+}
+
+.popup {
+    display: hidden;
+}
