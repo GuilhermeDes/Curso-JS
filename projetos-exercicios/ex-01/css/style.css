@@ -154,7 +154,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 25%;
     height: 80vh;
     background-color: white;
@@ -164,9 +164,27 @@ main {
 }
 
 h3 {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 35px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico';
+    padding-bottom: 10%;
 }
+
+.imgrst {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+ label {
+     font-weight: bold;
+     padding-bottom: 2%;
+ }
 
 .peso {
     outline: none;
@@ -177,6 +195,7 @@ h3 {
     padding: 3%;
     color: tomato;
     font-family: 'Source Code Pro', monospace;
+    margin-bottom: 15px;
 }
 
 .altura {
@@ -188,6 +207,8 @@ h3 {
     padding: 3%;
     color: tomato;
     font-family: 'Source Code Pro', monospace;
+
+    margin-bottom: 25px;
 }
 
 .btn-calcular {
@@ -198,4 +219,16 @@ h3 {
     padding: 3%;
     width: 30%;
     font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.quest {
+    padding-top: 60%;
+    padding-bottom: 20%;
+}
+
+.btn-calcular:hover {
+    background-color: rgb(90, 129, 12);
+    transition: 1s;
+    cursor: pointer;
 }
