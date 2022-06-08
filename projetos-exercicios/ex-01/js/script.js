@@ -2,6 +2,9 @@
 var peso = document.getElementById('peso')
 var altura = document.getElementById('altura')
 var imgrst = document.getElementById('resultado')
+var imgresultado = document.getElementById('imgresultado')
+var textoresultado = document.getElementById('textoresultado')
+var situacao = document.getElementById('situacao')
 
 function calcularimc() {
 
@@ -16,28 +19,44 @@ function calcularimc() {
     } else {
         var imc = p / ((a * a) / 10000);
     }
+
     //Aqui ele executa um laço de condição para verificar sobre o seu imc com as informações
     if (imc < 18.5) {
-        imgrst.innerHTML += `<img src="./img/img1.png" class = "imgr"> O seu imc é de ${imc}`
-        imgrst.innerHTML += `Você esta abaixo do peso!`
+        imgresultado.innerHTML += `<img src="./img/img1.png" class = "imgr">`
+        textoresultado.innerHTML += `O seu IMC é de: ${imc.toFixed(1)}`
+        situacao.innerHTML += `Você esta abaixo do peso!`
     } else if (imc >= 18.6 && imc <= 24.9) {
-        imgrst.innerHTML += `<img src="./img/img2.png" class = "imgr"> O seu imc é de ${imc}`
-        imgrst.innerHTML += `Você esta no peso ideal!`
+        imgresultado.innerHTML += `<img src="./img/img2.png" class = "imgr">`
+        textoresultado.innerHTML += `O seu IMC é de: ${imc.toFixed(1)}`
+        situacao.innerHTML += `Você esta no peso ideal!`
     } else if (imc >= 25 && imc <= 29.9) {
-        imgrst.innerHTML += `<img src="./img/img3.png" class = "imgr"> O seu imc é de ${imc}`
-        imgrst.innerHTML += `Você esta acima do peso!`
+        imgresultado.innerHTML += `<img src="./img/img3.png" class = "imgr">`
+        textoresultado.innerHTML += `O seu IMC é de: ${imc.toFixed(1)}`
+        situacao.innerHTML += `Você esta acima do peso!`
     } else if (imc > 30 && imc <= 34.9) {
-        imgrst.innerHTML += `<img src="./img/img4.png" class = "imgr"> O seu imc é de ${imc}`
-        imgrst.innerHTML += `Você esta com sobrepeso!`
+        imgresultado.innerHTML += `<img src="./img/img4.png" class = "imgr">`
+        textoresultado.innerHTML += `O seu IMC é de: ${imc.toFixed(1)}`
+        situacao.innerHTML += `Você esta com sobrepeso!`
     } else {
-        imgrst.innerHTML += `<img src="./img/img5.png" class = "imgr"> O seu imc é de ${imc}`
-        imgrst.innerHTML += `Você esta com obesidade!`
+        imgresultado.innerHTML += `<img src="./img/img5.png" class = "imgr">`
+        textoresultado.innerHTML += `O seu IMC é de: ${imc.toFixed(1)}`
+        situacao.innerHTML += `Você esta com obesidade!`
     }
 }
 
 //Reset
 //p.value = '', a.value = ''
-
+    //imgresultado = "", textoresultado = "", situacao = ""
+    /*
+    function reset(imgresultado, textoresultado, situacao) {
+        imgresultado.innerHTML += ``
+        textoresultado.innerHTML += ``
+        situacao.innerHTML += ``
+    }
+        */
+    
+    
+    
 /*Para realizar os testes
 
 /PESO/

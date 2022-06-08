@@ -240,11 +240,13 @@ label {
 }
 
 .imgrst {
+    width: 80%;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 2%;
+    padding: 1%;
     text-align: center;
 }
